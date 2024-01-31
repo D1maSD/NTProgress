@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TemplateOfDealsViewer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NTProgress" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yrR-By-qEP">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="8FQ-9l-Qvb">
+                        <barButtonItem key="rightBarButtonItem" title="Sort" id="8FQ-9l-Qvb">
                             <connections>
                                 <action selector="showFilter:" destination="BYZ-38-t0r" id="Tn3-2M-Rjl"/>
                             </connections>
