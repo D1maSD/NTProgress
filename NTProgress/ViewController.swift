@@ -1,7 +1,7 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
   private let server = Server()
 
   private var isFirstLaunch = true
@@ -81,7 +81,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func showFilter(_ sender: Any) {
-        let sheet = BottomSheetViewControllerTwo(delegate: self, cells: [BottomSheetCellType]())
+        let sheet = BottomSheetViewController(delegate: self, cells: [BottomSheetCellType]())
         navigationController?.present(sheet, animated: false)
     }
 }
@@ -118,14 +118,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     return 120
   }
 }
-
-
-extension ViewController: UIViewControllerTransitioningDelegate {
-    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return BottomSheetPresentationController(presentedViewController: presented, presenting: presenting)
-    }
-}
-
 
 extension ViewController {
     func configureTableView() {

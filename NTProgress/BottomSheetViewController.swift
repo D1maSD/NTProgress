@@ -15,7 +15,7 @@ protocol BottomSheetDelegate: AnyObject {
     func setType(type: Bool)
 }
 
-final class BottomSheetViewControllerTwo: UIViewController {
+final class BottomSheetViewController: UIViewController {
 
     private weak var delegate: BottomSheetDelegate?
 
@@ -286,7 +286,7 @@ final class BottomSheetViewControllerTwo: UIViewController {
 
 }
 
-extension BottomSheetViewControllerTwo: UITableViewDelegate, UITableViewDataSource {
+extension BottomSheetViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension

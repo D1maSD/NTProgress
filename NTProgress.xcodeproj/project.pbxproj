@@ -11,8 +11,7 @@
 		A8E486502B6A2C8400162F19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4864F2B6A2C8300162F19 /* AppDelegate.swift */; };
 		A8E486522B6A2C9900162F19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486512B6A2C9900162F19 /* SceneDelegate.swift */; };
 		A8E486542B6A2CA000162F19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486532B6A2C9F00162F19 /* ViewController.swift */; };
-		A8E486562B6A2CA500162F19 /* BottomSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486552B6A2CA500162F19 /* BottomSheetPresentationController.swift */; };
-		A8E486582B6A2CAA00162F19 /* BottomSheetTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486572B6A2CAA00162F19 /* BottomSheetTwo.swift */; };
+		A8E486582B6A2CAA00162F19 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486572B6A2CAA00162F19 /* BottomSheetViewController.swift */; };
 		A8E4865A2B6A2CAF00162F19 /* BottomSheetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486592B6A2CAF00162F19 /* BottomSheetType.swift */; };
 		A8E4865C2B6A2CB400162F19 /* BottomSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4865B2B6A2CB400162F19 /* BottomSheetViewModel.swift */; };
 		A8E4865E2B6A2CB800162F19 /* CustomRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4865D2B6A2CB800162F19 /* CustomRoundedButton.swift */; };
@@ -40,8 +39,7 @@
 		A8E4864F2B6A2C8300162F19 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8E486512B6A2C9900162F19 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A8E486532B6A2C9F00162F19 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A8E486552B6A2CA500162F19 /* BottomSheetPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetPresentationController.swift; sourceTree = "<group>"; };
-		A8E486572B6A2CAA00162F19 /* BottomSheetTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetTwo.swift; sourceTree = "<group>"; };
+		A8E486572B6A2CAA00162F19 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		A8E486592B6A2CAF00162F19 /* BottomSheetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetType.swift; sourceTree = "<group>"; };
 		A8E4865B2B6A2CB400162F19 /* BottomSheetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewModel.swift; sourceTree = "<group>"; };
 		A8E4865D2B6A2CB800162F19 /* CustomRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRoundedButton.swift; sourceTree = "<group>"; };
@@ -95,8 +93,7 @@
 				A8E4864F2B6A2C8300162F19 /* AppDelegate.swift */,
 				A8E486512B6A2C9900162F19 /* SceneDelegate.swift */,
 				A8E486532B6A2C9F00162F19 /* ViewController.swift */,
-				A8E486552B6A2CA500162F19 /* BottomSheetPresentationController.swift */,
-				A8E486572B6A2CAA00162F19 /* BottomSheetTwo.swift */,
+				A8E486572B6A2CAA00162F19 /* BottomSheetViewController.swift */,
 				A8E486592B6A2CAF00162F19 /* BottomSheetType.swift */,
 				A8E4865B2B6A2CB400162F19 /* BottomSheetViewModel.swift */,
 				A8E4865D2B6A2CB800162F19 /* CustomRoundedButton.swift */,
@@ -256,9 +253,8 @@
 				A8E4865A2B6A2CAF00162F19 /* BottomSheetType.swift in Sources */,
 				A8E486722B6A2D4000162F19 /* HeaderCell.swift in Sources */,
 				A8E486642B6A2CCB00162F19 /* Colors.swift in Sources */,
-				A8E486582B6A2CAA00162F19 /* BottomSheetTwo.swift in Sources */,
+				A8E486582B6A2CAA00162F19 /* BottomSheetViewController.swift in Sources */,
 				A8E486602B6A2CC300162F19 /* BottomSheetTableViewCell.swift in Sources */,
-				A8E486562B6A2CA500162F19 /* BottomSheetPresentationController.swift in Sources */,
 				A8E4866A2B6A2D1300162F19 /* TypeExtensions.swift in Sources */,
 				A8E486542B6A2CA000162F19 /* ViewController.swift in Sources */,
 				A8E4865E2B6A2CB800162F19 /* CustomRoundedButton.swift in Sources */,
