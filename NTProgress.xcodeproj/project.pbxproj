@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		58EF6D42E44907294B876216 /* Pods_NTProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99336B0CC38C523351960B69 /* Pods_NTProgress.framework */; };
+		A898E3B72B6A483300261666 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A898E3B62B6A483300261666 /* HeaderCell.xib */; };
 		A8E486502B6A2C8400162F19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4864F2B6A2C8300162F19 /* AppDelegate.swift */; };
 		A8E486522B6A2C9900162F19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486512B6A2C9900162F19 /* SceneDelegate.swift */; };
 		A8E486542B6A2CA000162F19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486532B6A2C9F00162F19 /* ViewController.swift */; };
@@ -25,7 +26,6 @@
 		A8E4866E2B6A2D2A00162F19 /* DealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8E4866D2B6A2D2900162F19 /* DealCell.xib */; };
 		A8E486702B6A2D3100162F19 /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4866F2B6A2D3100162F19 /* DealCell.swift */; };
 		A8E486722B6A2D4000162F19 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486712B6A2D4000162F19 /* HeaderCell.swift */; };
-		A8E486742B6A2D4900162F19 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8E486732B6A2D4900162F19 /* HeaderCell.xib */; };
 		A8E486762B6A307600162F19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E486752B6A307400162F19 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +33,7 @@
 		557B3299B57B98397B2F66FD /* Pods-NTProgress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTProgress.debug.xcconfig"; path = "Target Support Files/Pods-NTProgress/Pods-NTProgress.debug.xcconfig"; sourceTree = "<group>"; };
 		99336B0CC38C523351960B69 /* Pods_NTProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F85A132726E0E990ECFEB0 /* Pods-NTProgress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTProgress.release.xcconfig"; path = "Target Support Files/Pods-NTProgress/Pods-NTProgress.release.xcconfig"; sourceTree = "<group>"; };
+		A898E3B62B6A483300261666 /* HeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderCell.xib; path = ../../../mobileiosdevtestwork/TemplateOfDealsViewer/HeaderCell.xib; sourceTree = "<group>"; };
 		A8E486372B6A2C2500162F19 /* NTProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8E486482B6A2C2700162F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8E4864E2B6A2C8200162F19 /* NTProgress-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NTProgress-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		A8E4866D2B6A2D2900162F19 /* DealCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealCell.xib; sourceTree = "<group>"; };
 		A8E4866F2B6A2D3100162F19 /* DealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
 		A8E486712B6A2D4000162F19 /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
-		A8E486732B6A2D4900162F19 /* HeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		A8E486752B6A307400162F19 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +69,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A898E3B82B6A486F00261666 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8E486632B6A2CCB00162F19 /* Colors.swift */,
+				A8E486652B6A2CD600162F19 /* Assets.xcassets */,
+				A8E486752B6A307400162F19 /* Main.storyboard */,
+				A8E486672B6A2D0E00162F19 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A8E4862E2B6A2C2500162F19 = {
 			isa = PBXGroup;
 			children = (
@@ -90,29 +101,42 @@
 		A8E486392B6A2C2500162F19 /* NTProgress */ = {
 			isa = PBXGroup;
 			children = (
+				A898E3B82B6A486F00261666 /* Resources */,
 				A8E4864F2B6A2C8300162F19 /* AppDelegate.swift */,
 				A8E486512B6A2C9900162F19 /* SceneDelegate.swift */,
 				A8E486532B6A2C9F00162F19 /* ViewController.swift */,
-				A8E486572B6A2CAA00162F19 /* BottomSheetViewController.swift */,
-				A8E486592B6A2CAF00162F19 /* BottomSheetType.swift */,
-				A8E4865B2B6A2CB400162F19 /* BottomSheetViewModel.swift */,
+				A8E486782B6A476F00162F19 /* Cells */,
+				A8E486772B6A474300162F19 /* BottomSheet */,
 				A8E4865D2B6A2CB800162F19 /* CustomRoundedButton.swift */,
-				A8E4865F2B6A2CC200162F19 /* BottomSheetTableViewCell.swift */,
 				A8E486612B6A2CC600162F19 /* UITableView+Extension.swift */,
-				A8E486632B6A2CCB00162F19 /* Colors.swift */,
-				A8E486652B6A2CD600162F19 /* Assets.xcassets */,
-				A8E486752B6A307400162F19 /* Main.storyboard */,
-				A8E486672B6A2D0E00162F19 /* LaunchScreen.storyboard */,
 				A8E486692B6A2D1300162F19 /* TypeExtensions.swift */,
 				A8E4866B2B6A2D1900162F19 /* Server.swift */,
-				A8E4866D2B6A2D2900162F19 /* DealCell.xib */,
-				A8E4866F2B6A2D3100162F19 /* DealCell.swift */,
-				A8E486712B6A2D4000162F19 /* HeaderCell.swift */,
-				A8E486732B6A2D4900162F19 /* HeaderCell.xib */,
 				A8E486482B6A2C2700162F19 /* Info.plist */,
 				A8E4864E2B6A2C8200162F19 /* NTProgress-Bridging-Header.h */,
 			);
 			path = NTProgress;
+			sourceTree = "<group>";
+		};
+		A8E486772B6A474300162F19 /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				A8E4865F2B6A2CC200162F19 /* BottomSheetTableViewCell.swift */,
+				A8E486572B6A2CAA00162F19 /* BottomSheetViewController.swift */,
+				A8E486592B6A2CAF00162F19 /* BottomSheetType.swift */,
+				A8E4865B2B6A2CB400162F19 /* BottomSheetViewModel.swift */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		A8E486782B6A476F00162F19 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A8E4866F2B6A2D3100162F19 /* DealCell.swift */,
+				A8E4866D2B6A2D2900162F19 /* DealCell.xib */,
+				A8E486712B6A2D4000162F19 /* HeaderCell.swift */,
+				A898E3B62B6A483300261666 /* HeaderCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		BFCDBD3880912F6FB27AB16B /* Frameworks */ = {
@@ -193,10 +217,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8E486742B6A2D4900162F19 /* HeaderCell.xib in Resources */,
 				A8E486762B6A307600162F19 /* Main.storyboard in Resources */,
 				A8E4866E2B6A2D2A00162F19 /* DealCell.xib in Resources */,
 				A8E486662B6A2CD700162F19 /* Assets.xcassets in Resources */,
+				A898E3B72B6A483300261666 /* HeaderCell.xib in Resources */,
 				A8E486682B6A2D0E00162F19 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
