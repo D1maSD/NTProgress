@@ -7,23 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A8E4863B2B6A2C2500162F19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4863A2B6A2C2500162F19 /* AppDelegate.swift */; };
-		A8E4863D2B6A2C2500162F19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4863C2B6A2C2500162F19 /* SceneDelegate.swift */; };
-		A8E4863F2B6A2C2500162F19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4863E2B6A2C2500162F19 /* ViewController.swift */; };
-		A8E486422B6A2C2500162F19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E486402B6A2C2500162F19 /* Main.storyboard */; };
-		A8E486442B6A2C2700162F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E486432B6A2C2700162F19 /* Assets.xcassets */; };
-		A8E486472B6A2C2700162F19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E486452B6A2C2700162F19 /* LaunchScreen.storyboard */; };
+		58EF6D42E44907294B876216 /* Pods_NTProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99336B0CC38C523351960B69 /* Pods_NTProgress.framework */; };
+		A8E486502B6A2C8400162F19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4864F2B6A2C8300162F19 /* AppDelegate.swift */; };
+		A8E486522B6A2C9900162F19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486512B6A2C9900162F19 /* SceneDelegate.swift */; };
+		A8E486542B6A2CA000162F19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486532B6A2C9F00162F19 /* ViewController.swift */; };
+		A8E486562B6A2CA500162F19 /* BottomSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486552B6A2CA500162F19 /* BottomSheetPresentationController.swift */; };
+		A8E486582B6A2CAA00162F19 /* BottomSheetTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486572B6A2CAA00162F19 /* BottomSheetTwo.swift */; };
+		A8E4865A2B6A2CAF00162F19 /* BottomSheetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486592B6A2CAF00162F19 /* BottomSheetType.swift */; };
+		A8E4865C2B6A2CB400162F19 /* BottomSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4865B2B6A2CB400162F19 /* BottomSheetViewModel.swift */; };
+		A8E4865E2B6A2CB800162F19 /* CustomRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4865D2B6A2CB800162F19 /* CustomRoundedButton.swift */; };
+		A8E486602B6A2CC300162F19 /* BottomSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4865F2B6A2CC200162F19 /* BottomSheetTableViewCell.swift */; };
+		A8E486622B6A2CC600162F19 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486612B6A2CC600162F19 /* UITableView+Extension.swift */; };
+		A8E486642B6A2CCB00162F19 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486632B6A2CCB00162F19 /* Colors.swift */; };
+		A8E486662B6A2CD700162F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E486652B6A2CD600162F19 /* Assets.xcassets */; };
+		A8E486682B6A2D0E00162F19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E486672B6A2D0E00162F19 /* LaunchScreen.storyboard */; };
+		A8E4866A2B6A2D1300162F19 /* TypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486692B6A2D1300162F19 /* TypeExtensions.swift */; };
+		A8E4866C2B6A2D1900162F19 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4866B2B6A2D1900162F19 /* Server.swift */; };
+		A8E4866E2B6A2D2A00162F19 /* DealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8E4866D2B6A2D2900162F19 /* DealCell.xib */; };
+		A8E486702B6A2D3100162F19 /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E4866F2B6A2D3100162F19 /* DealCell.swift */; };
+		A8E486722B6A2D4000162F19 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E486712B6A2D4000162F19 /* HeaderCell.swift */; };
+		A8E486742B6A2D4900162F19 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8E486732B6A2D4900162F19 /* HeaderCell.xib */; };
+		A8E486762B6A307600162F19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E486752B6A307400162F19 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		557B3299B57B98397B2F66FD /* Pods-NTProgress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTProgress.debug.xcconfig"; path = "Target Support Files/Pods-NTProgress/Pods-NTProgress.debug.xcconfig"; sourceTree = "<group>"; };
+		99336B0CC38C523351960B69 /* Pods_NTProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NTProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99F85A132726E0E990ECFEB0 /* Pods-NTProgress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NTProgress.release.xcconfig"; path = "Target Support Files/Pods-NTProgress/Pods-NTProgress.release.xcconfig"; sourceTree = "<group>"; };
 		A8E486372B6A2C2500162F19 /* NTProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8E4863A2B6A2C2500162F19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A8E4863C2B6A2C2500162F19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A8E4863E2B6A2C2500162F19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A8E486412B6A2C2500162F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A8E486432B6A2C2700162F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A8E486462B6A2C2700162F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8E486482B6A2C2700162F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E4864E2B6A2C8200162F19 /* NTProgress-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NTProgress-Bridging-Header.h"; sourceTree = "<group>"; };
+		A8E4864F2B6A2C8300162F19 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8E486512B6A2C9900162F19 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A8E486532B6A2C9F00162F19 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8E486552B6A2CA500162F19 /* BottomSheetPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetPresentationController.swift; sourceTree = "<group>"; };
+		A8E486572B6A2CAA00162F19 /* BottomSheetTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetTwo.swift; sourceTree = "<group>"; };
+		A8E486592B6A2CAF00162F19 /* BottomSheetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetType.swift; sourceTree = "<group>"; };
+		A8E4865B2B6A2CB400162F19 /* BottomSheetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetViewModel.swift; sourceTree = "<group>"; };
+		A8E4865D2B6A2CB800162F19 /* CustomRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRoundedButton.swift; sourceTree = "<group>"; };
+		A8E4865F2B6A2CC200162F19 /* BottomSheetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetTableViewCell.swift; sourceTree = "<group>"; };
+		A8E486612B6A2CC600162F19 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		A8E486632B6A2CCB00162F19 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A8E486652B6A2CD600162F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8E486672B6A2D0E00162F19 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8E486692B6A2D1300162F19 /* TypeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeExtensions.swift; sourceTree = "<group>"; };
+		A8E4866B2B6A2D1900162F19 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		A8E4866D2B6A2D2900162F19 /* DealCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealCell.xib; sourceTree = "<group>"; };
+		A8E4866F2B6A2D3100162F19 /* DealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
+		A8E486712B6A2D4000162F19 /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		A8E486732B6A2D4900162F19 /* HeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		A8E486752B6A307400162F19 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58EF6D42E44907294B876216 /* Pods_NTProgress.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +76,8 @@
 			children = (
 				A8E486392B6A2C2500162F19 /* NTProgress */,
 				A8E486382B6A2C2500162F19 /* Products */,
+				E30E864CA57F94169964F8AD /* Pods */,
+				BFCDBD3880912F6FB27AB16B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +92,47 @@
 		A8E486392B6A2C2500162F19 /* NTProgress */ = {
 			isa = PBXGroup;
 			children = (
-				A8E4863A2B6A2C2500162F19 /* AppDelegate.swift */,
-				A8E4863C2B6A2C2500162F19 /* SceneDelegate.swift */,
-				A8E4863E2B6A2C2500162F19 /* ViewController.swift */,
-				A8E486402B6A2C2500162F19 /* Main.storyboard */,
-				A8E486432B6A2C2700162F19 /* Assets.xcassets */,
-				A8E486452B6A2C2700162F19 /* LaunchScreen.storyboard */,
+				A8E4864F2B6A2C8300162F19 /* AppDelegate.swift */,
+				A8E486512B6A2C9900162F19 /* SceneDelegate.swift */,
+				A8E486532B6A2C9F00162F19 /* ViewController.swift */,
+				A8E486552B6A2CA500162F19 /* BottomSheetPresentationController.swift */,
+				A8E486572B6A2CAA00162F19 /* BottomSheetTwo.swift */,
+				A8E486592B6A2CAF00162F19 /* BottomSheetType.swift */,
+				A8E4865B2B6A2CB400162F19 /* BottomSheetViewModel.swift */,
+				A8E4865D2B6A2CB800162F19 /* CustomRoundedButton.swift */,
+				A8E4865F2B6A2CC200162F19 /* BottomSheetTableViewCell.swift */,
+				A8E486612B6A2CC600162F19 /* UITableView+Extension.swift */,
+				A8E486632B6A2CCB00162F19 /* Colors.swift */,
+				A8E486652B6A2CD600162F19 /* Assets.xcassets */,
+				A8E486752B6A307400162F19 /* Main.storyboard */,
+				A8E486672B6A2D0E00162F19 /* LaunchScreen.storyboard */,
+				A8E486692B6A2D1300162F19 /* TypeExtensions.swift */,
+				A8E4866B2B6A2D1900162F19 /* Server.swift */,
+				A8E4866D2B6A2D2900162F19 /* DealCell.xib */,
+				A8E4866F2B6A2D3100162F19 /* DealCell.swift */,
+				A8E486712B6A2D4000162F19 /* HeaderCell.swift */,
+				A8E486732B6A2D4900162F19 /* HeaderCell.xib */,
 				A8E486482B6A2C2700162F19 /* Info.plist */,
+				A8E4864E2B6A2C8200162F19 /* NTProgress-Bridging-Header.h */,
 			);
 			path = NTProgress;
+			sourceTree = "<group>";
+		};
+		BFCDBD3880912F6FB27AB16B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99336B0CC38C523351960B69 /* Pods_NTProgress.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E30E864CA57F94169964F8AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				557B3299B57B98397B2F66FD /* Pods-NTProgress.debug.xcconfig */,
+				99F85A132726E0E990ECFEB0 /* Pods-NTProgress.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8E4864B2B6A2C2700162F19 /* Build configuration list for PBXNativeTarget "NTProgress" */;
 			buildPhases = (
+				ADC161528BAC0CE3568102D1 /* [CP] Check Pods Manifest.lock */,
 				A8E486332B6A2C2500162F19 /* Sources */,
 				A8E486342B6A2C2500162F19 /* Frameworks */,
 				A8E486352B6A2C2500162F19 /* Resources */,
+				E5F1299B9247DF90A910B8D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +169,7 @@
 				TargetAttributes = {
 					A8E486362B6A2C2500162F19 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -125,45 +196,82 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8E486472B6A2C2700162F19 /* LaunchScreen.storyboard in Resources */,
-				A8E486442B6A2C2700162F19 /* Assets.xcassets in Resources */,
-				A8E486422B6A2C2500162F19 /* Main.storyboard in Resources */,
+				A8E486742B6A2D4900162F19 /* HeaderCell.xib in Resources */,
+				A8E486762B6A307600162F19 /* Main.storyboard in Resources */,
+				A8E4866E2B6A2D2A00162F19 /* DealCell.xib in Resources */,
+				A8E486662B6A2CD700162F19 /* Assets.xcassets in Resources */,
+				A8E486682B6A2D0E00162F19 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ADC161528BAC0CE3568102D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NTProgress-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5F1299B9247DF90A910B8D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTProgress/Pods-NTProgress-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NTProgress/Pods-NTProgress-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NTProgress/Pods-NTProgress-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8E486332B6A2C2500162F19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8E4863F2B6A2C2500162F19 /* ViewController.swift in Sources */,
-				A8E4863B2B6A2C2500162F19 /* AppDelegate.swift in Sources */,
-				A8E4863D2B6A2C2500162F19 /* SceneDelegate.swift in Sources */,
+				A8E4865A2B6A2CAF00162F19 /* BottomSheetType.swift in Sources */,
+				A8E486722B6A2D4000162F19 /* HeaderCell.swift in Sources */,
+				A8E486642B6A2CCB00162F19 /* Colors.swift in Sources */,
+				A8E486582B6A2CAA00162F19 /* BottomSheetTwo.swift in Sources */,
+				A8E486602B6A2CC300162F19 /* BottomSheetTableViewCell.swift in Sources */,
+				A8E486562B6A2CA500162F19 /* BottomSheetPresentationController.swift in Sources */,
+				A8E4866A2B6A2D1300162F19 /* TypeExtensions.swift in Sources */,
+				A8E486542B6A2CA000162F19 /* ViewController.swift in Sources */,
+				A8E4865E2B6A2CB800162F19 /* CustomRoundedButton.swift in Sources */,
+				A8E486502B6A2C8400162F19 /* AppDelegate.swift in Sources */,
+				A8E486702B6A2D3100162F19 /* DealCell.swift in Sources */,
+				A8E486622B6A2CC600162F19 /* UITableView+Extension.swift in Sources */,
+				A8E4865C2B6A2CB400162F19 /* BottomSheetViewModel.swift in Sources */,
+				A8E4866C2B6A2D1900162F19 /* Server.swift in Sources */,
+				A8E486522B6A2C9900162F19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A8E486402B6A2C2500162F19 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8E486412B6A2C2500162F19 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A8E486452B6A2C2700162F19 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8E486462B6A2C2700162F19 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A8E486492B6A2C2700162F19 /* Debug */ = {
@@ -282,9 +390,11 @@
 		};
 		A8E4864C2B6A2C2700162F19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 557B3299B57B98397B2F66FD /* Pods-NTProgress.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YMHC929DBV;
@@ -303,6 +413,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NTProgress.NTProgress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NTProgress/NTProgress-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,9 +422,11 @@
 		};
 		A8E4864D2B6A2C2700162F19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99F85A132726E0E990ECFEB0 /* Pods-NTProgress.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YMHC929DBV;
@@ -331,6 +445,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NTProgress.NTProgress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NTProgress/NTProgress-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
