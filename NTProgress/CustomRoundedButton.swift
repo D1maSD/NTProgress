@@ -25,7 +25,7 @@ final class CustomRoundedButton: UIButton {
         backgroundColor = .mustard
         layer.borderColor = UIColor.clear.cgColor
         layer.borderWidth = 0
-        titleLabel?.font = UIFont(name: "System", size: 15) // FontFamily.Montserrat.bold.font(size: 15)
+        titleLabel?.font = UIFont(name: "System", size: 15)
         updateState(isActive: isActive)
         self.addTarget(self, action: #selector(tap), for: .touchUpInside)
     }

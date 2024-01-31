@@ -6,29 +6,29 @@ class ViewController: UIViewController {
 
   private var isFirstLaunch = true
   @IBOutlet weak var tableView: UITableView!
-    var count: Int = 0
 
-    var allDealsBuffer: [Deal] = [] 
-    var timer = Timer()
-    var byAscending: Bool = true
+    private var allDealsBuffer: [Deal] = []
+    private var timer = Timer()
+    private var byAscending: Bool = true
     private var model: [Deal] = []
-    var currentSortingType: BottomSheetCellType = .date
+    private var currentSortingType: BottomSheetCellType = .date
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-              timer = Timer.scheduledTimer(withTimeInterval: 20, repeats: true) { timer in
-                  DispatchQueue.main.async {
-                      if !self.allDealsBuffer.isEmpty {
-                          self.model.append(contentsOf: self.allDealsBuffer)
-                          self.allDealsBuffer.removeAll() // Очищаем буфер
-                          self.applySortingAndReloadData(self.model)
+        addTimer()
+    }
 
-//                          let filteredDeals = self.sortModelByDateModifier(self.model)
-//                          self.model = filteredDeals
-                          self.tableView.reloadData()
-                      }
-                  }
-              }
+    private func addTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 20, repeats: true) { timer in
+            DispatchQueue.main.async {
+                if !self.allDealsBuffer.isEmpty {
+                    self.model.append(contentsOf: self.allDealsBuffer)
+                    self.allDealsBuffer.removeAll() // Очищаем буфер
+                    self.applySortingAndReloadData(self.model)
+                    self.tableView.reloadData()
+                }
+            }
+        }
     }
   
   override func viewDidLoad() {
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
 
     }
 
-    func subscribeToDeals() {
+    private func subscribeToDeals() {
         server.subscribeToDeals { deals in
             if self.isFirstLaunch {
                 self.isFirstLaunch = false
@@ -58,10 +58,8 @@ class ViewController: UIViewController {
         }
     }
 
-    func applySortingAndReloadData(_ deals: [Deal]) {
-        print("TYPE: \(currentSortingType)")
-        switch currentSortingType { // currentSortingType в которой хранится текущий выбранный тип сортировки
-
+    private func applySortingAndReloadData(_ deals: [Deal]) {
+        switch currentSortingType {
             case .price:
                 let filteredDeals = sortDealsByPrice(deals)
                 self.model = filteredDeals
@@ -83,11 +81,6 @@ class ViewController: UIViewController {
 
 
     @IBAction func showFilter(_ sender: Any) {
-//        let bottomSheetVC = BottomSheetViewController()
-//        bottomSheetVC.modalPresentationStyle = .custom
-//        bottomSheetVC.transitioningDelegate = self
-//        present(bottomSheetVC, animated: true, completion: nil)
-
         let sheet = BottomSheetViewControllerTwo(delegate: self, cells: [BottomSheetCellType]())
         navigationController?.present(sheet, animated: false)
     }
@@ -132,21 +125,6 @@ extension ViewController: UIViewControllerTransitioningDelegate {
         return BottomSheetPresentationController(presentedViewController: presented, presenting: presenting)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 extension ViewController {
@@ -203,9 +181,7 @@ extension ViewController: BottomSheetDelegate {
     func setType(type: Bool) {
         byAscending = type
     }
-
     func dismiss() {
-//        viewModel.routes?(.photoBottomSheetDismiss)
         print("dismiss()")
     }
     func allParameters(data: [BottomSheetCellType], type: BottomSheetType) {

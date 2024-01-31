@@ -21,13 +21,6 @@ final class BottomSheetViewControllerTwo: UIViewController {
 
     private var selectionType: BottomSheetSelectionType?
     private var neededHeightForContainer: CGFloat = 0
-//    private lazy var typeOfSortButton: UIButton = {
-//        let button = UIButton()
-//        button.backgroundColor = .clear
-//        button.setTitle("По возрастанию", for: .normal)
-//        return button
-//    }()
-
     private let confirmButton = CustomRoundedButton()
     private let tableView = TableViewFactory.make()
     private var type: BottomSheetType = .filter
@@ -75,7 +68,6 @@ final class BottomSheetViewControllerTwo: UIViewController {
         self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
         modalPresentationStyle = .overCurrentContext
-//        setup(cells: cells)
         setup()
     }
 
@@ -99,28 +91,12 @@ final class BottomSheetViewControllerTwo: UIViewController {
         animatePresentContainer()
     }
 
-//    private func setup(cells: [BottomSheetCellType]) {
-//        confirmButton.configure(type: .confirm)
-//        confirmButton.addTarget(self, action: #selector(confirmTap), for: .touchUpInside)
-//        closeButton.addTarget(self, action: #selector(handleCloseAction), for: .touchUpInside)
-//        arrayModels = type.cellModels
-//        selectionType = type.selectionType
-//        arrayModels = arrayModels.map {
-//            let isSelected = cells.contains($0.type)
-//            return BottomSheetViewModel(type: $0.type, isSelected: isSelected)
-//        }
-//    }
-
     private func setup() {
         confirmButton.configure()
         confirmButton.addTarget(self, action: #selector(confirmTap), for: .touchUpInside)
         typeOfSortButton.addTarget(self, action: #selector(handleCloseAction), for: .touchUpInside)
         arrayModels = type.cellModels
         selectionType = .single
-//        arrayModels = arrayModels.map {
-//            let isSelected = cells.contains($0.type)
-//            return BottomSheetViewModel(type: $0.type, isSelected: isSelected)
-//        }
     }
 
     private func configureTableView() {
@@ -306,7 +282,6 @@ final class BottomSheetViewControllerTwo: UIViewController {
                     self.delegate?.setType(type: true)
                 }
             }
-//        animateDismissView()
     }
 
 }
